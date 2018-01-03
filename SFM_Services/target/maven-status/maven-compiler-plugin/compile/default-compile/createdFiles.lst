@@ -1,0 +1,4 @@
+com\sfm\utils\ApplicationProperties.class
+com\sfm\auth\UserSessionMapManager.class
+com\sfm\services\userauthentication\UserAuthenticationService.class
+com\sfm\services\userrole\UserRoleService.class

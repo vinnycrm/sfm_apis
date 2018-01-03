@@ -1,0 +1,6 @@
+com\sfm\dao\userrole\UserRoleDAO.class
+com\sfm\dao\common\DBManagerInterface.class
+com\sfm\dao\user\UserAuthenticationDAO.class
+com\sfm\dao\common\DBManager.class
+com\sfm\dao\common\AbstractDBManager.class
+com\sfm\dao\DBMappingConstants.class

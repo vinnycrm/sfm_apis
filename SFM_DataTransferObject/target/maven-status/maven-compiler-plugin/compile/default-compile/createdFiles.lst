@@ -1,0 +1,8 @@
+com\sfm\dto\applicationdetails\ApplicationDetailsDTO.class
+com\sfm\dto\user\UserSessionDTO.class
+com\sfm\dto\common\ApplicationConstants.class
+com\sfm\dto\user\UserAuthenticationDTO.class
+com\sfm\dto\IModel.class
+com\sfm\dto\start\ServerDetailsDTO.class
+com\sfm\dto\userdetails\UserDetailsDTO.class
+com\sfm\dto\userrole\UserRoleDTO.class

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy MM dd HH:mm:ss:SSS} \(%logger{26}:%L{4}\) :[%thread] %level - %msg %n</pattern>
+    </encoder>
+  </appender>
+  
+   <appender name="ALL_ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${catalina.base}\..\sfm_logs\webservice.%d{yyyy-MM-dd_HH}.%i.log.zip</fileNamePattern>
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <maxFileSize>25MB</maxFileSize>
+      </timeBasedFileNamingAndTriggeringPolicy>
+      <MaxHistory>200</MaxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy MM dd HH:mm:ss:SSS} \(%logger{26}:%L{4}\) :[%thread] %level - %msg %n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="java.sql" level="DEBUG" additivity="false">
+  	<appender-ref ref="CONSOLE" />
+  	<appender-ref ref="ALL_ROLLING_FILE" />
+  </logger>
+  
+  <logger name="com.sfm.webservices" level="DEBUG" additivity="false">
+    <appender-ref ref="CONSOLE" />
+  </logger>
+    
+  <root level="ALL">
+    <appender-ref ref="CONSOLE" />
+  </root>
+</configuration>

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>SecuredFileManagment</groupId>
+		<artifactId>SecuredFileManagment</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>SFM_WebServices</artifactId>
+	<packaging>war</packaging>
+	<name>SFM_WebServices</name>
+	<properties>
+		<junit.version>3.8.1</junit.version>
+		<javax.servlet.servlet-api.version>2.5</javax.servlet.servlet-api.version>
+		<org.springframework.boot.spring-boot-starter-web>1.5.6.RELEASE</org.springframework.boot.spring-boot-starter-web>
+		<SecuredFileManagment.SFM_DataTransferObject.version>0.0.1-SNAPSHOT</SecuredFileManagment.SFM_DataTransferObject.version>
+		<SecuredFileManagment.SFM_Services.version>0.0.1-SNAPSHOT</SecuredFileManagment.SFM_Services.version>
+		<bootstrap-version>1.3.5.RELEASE</bootstrap-version>
+		<spring-webmvc-version>4.2.5.RELEASE</spring-webmvc-version>
+		<jwt-version>0.6.0</jwt-version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${javax.servlet.servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot</artifactId>
+			<version>${bootstrap-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+			<version>${bootstrap-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${org.springframework.boot.spring-boot-starter-web}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring-webmvc-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>${bootstrap-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>${jwt-version}</version>
+		</dependency>
+
+		<!-- Project Module Dependency -->
+		<dependency>
+			<groupId>SecuredFileManagment</groupId>
+			<artifactId>SFM_DataTransferObject</artifactId>
+			<version>${SecuredFileManagment.SFM_DataTransferObject.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>SecuredFileManagment</groupId>
+			<artifactId>SFM_Services</artifactId>
+			<version>${SecuredFileManagment.SFM_Services.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>SFM_WebServices</finalName>
+	</build>
+</project>

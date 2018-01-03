@@ -1,0 +1,6 @@
+D:\JavaDevelopment\SecuredFileManagment\SFM_DataAccessObject\src\main\java\com\sfm\dao\common\DBManager.java
+D:\JavaDevelopment\SecuredFileManagment\SFM_DataAccessObject\src\main\java\com\sfm\dao\common\DBManagerInterface.java
+D:\JavaDevelopment\SecuredFileManagment\SFM_DataAccessObject\src\main\java\com\sfm\dao\common\AbstractDBManager.java
+D:\JavaDevelopment\SecuredFileManagment\SFM_DataAccessObject\src\main\java\com\sfm\dao\userrole\UserRoleDAO.java
+D:\JavaDevelopment\SecuredFileManagment\SFM_DataAccessObject\src\main\java\com\sfm\dao\user\UserAuthenticationDAO.java
+D:\JavaDevelopment\SecuredFileManagment\SFM_DataAccessObject\src\main\java\com\sfm\dao\DBMappingConstants.java
