@@ -12,7 +12,7 @@
 	<name>SFM_DataAccessObject</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mybatis-version>3.2.8</mybatis-version>
+		<mybatis-version>3.5.6</mybatis-version>
 		<mysql-driver-version>5.1.6</mysql-driver-version>
 	</properties>
 	<dependencies>
