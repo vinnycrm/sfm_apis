@@ -18,7 +18,7 @@
 		<SecuredFileManagment.SFM_DataTransferObject.version>0.0.1-SNAPSHOT</SecuredFileManagment.SFM_DataTransferObject.version>
 		<SecuredFileManagment.SFM_Services.version>0.0.1-SNAPSHOT</SecuredFileManagment.SFM_Services.version>
 		<bootstrap-version>1.3.5.RELEASE</bootstrap-version>
-		<spring-webmvc-version>4.2.5.RELEASE</spring-webmvc-version>
+		<spring-webmvc-version>5.2.20.RELEASE</spring-webmvc-version>
 		<jwt-version>0.6.0</jwt-version>
 	</properties>
 	<dependencies>
